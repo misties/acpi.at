@@ -516,7 +516,11 @@ section.typewriting a,
 	list-style: none;
 }
 
-.fm-recent {
+.fm-recent:hover {
+	filter: none;
+}
+
+.fm-recent a {
 	display: flex;
 	flex-direction: column;
 	align-items: center;

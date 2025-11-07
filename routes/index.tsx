@@ -135,7 +135,7 @@ export default function Home() {
 						<span class="key">WEB</span>
 						<code class="value">
 							<a href="https://ko-fi.com/west">west@ko-fi</a>
-							<a href="https://github.com/sponsors/favewa">favewa@github</a>
+							<a href="https://github.com/sponsors/misties">misties@github</a>
 						</code>
 					</div>
 					<div class="row">

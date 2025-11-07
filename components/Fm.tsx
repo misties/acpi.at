@@ -17,13 +17,30 @@ export function Fm() {
 				<ul class="fm-recent-tracks">
 					{content.map((track) => (
 						<li class="fm-recent" key={track.artist + track.name}>
-							{track.cover && <img class="cover" src={track.cover} alt="" />}
+							<a href={track.url}>
+								<img
+									class="cover"
+									src={track.cover ||
+										"https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png"}
+									alt=""
+								/>
 
-							<div class="meta">
-								<strong class="title">{track.name}</strong>
-								<span>{track.artist}</span>
-								{track.loved && <span class="loved">❤</span>}
-							</div>
+								<div class="meta">
+									<strong class="title">{track.name}</strong>
+									<span>{track.artist}</span>
+									{track.playing
+										? (
+											<span class="loved" title="Now playing">
+												▷
+											</span>
+										)
+										: (track.loved && (
+											<span class="loved" title="Loved">
+												❤
+											</span>
+										))}
+								</div>
+							</a>
 						</li>
 					))}
 					<a class="fm-more" href="https://last.fm/user/favewa">

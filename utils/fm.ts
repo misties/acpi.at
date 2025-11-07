@@ -10,7 +10,9 @@ interface Track {
 	name: string;
 	artist: string;
 	loved: boolean;
+	playing: boolean;
 	cover?: string;
+	url: string;
 }
 
 const secret = Deno.env.get("FM_SECRET");
@@ -25,11 +27,13 @@ if (secret) {
 			extended: true,
 		});
 
-		return raw?.filter((x) => !x.nowPlaying).map((track) => ({
+		return raw?.map((track) => ({
 			artist: track.artist.name,
 			name: track.name,
 			loved: "loved" in track ? track.loved as boolean : false,
+			playing: track.nowPlaying || false,
 			cover: track.images.pop()?.url,
+			url: track.url || "#",
 		}));
 	}, 60);
 }
