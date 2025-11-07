@@ -1,0 +1,69 @@
+{
+	"nodeModulesDir": "manual",
+	"tasks": {
+		"check": "deno fmt --check . && deno lint . && deno check",
+		"dev": "vite",
+		"build": "vite build",
+		"start": "deno serve -A _fresh/server.js",
+		"update": "deno run -A -r jsr:@fresh/update ."
+	},
+	"fmt": {
+		"useTabs": true
+	},
+	"lint": {
+		"rules": {
+			"tags": [
+				"fresh",
+				"recommended"
+			],
+			"exclude": [
+				"no-explicit-any",
+				"no-window",
+				"no-window-prefix",
+				"no-unused-vars"
+			]
+		}
+	},
+	"exclude": [
+		"**/_fresh/*"
+	],
+	"imports": {
+		"@/": "./",
+		"@atproto/api": "npm:@atproto/api@^0.18.0",
+		"@musicorum/lastfm": "npm:@musicorum/lastfm@^0.4.0",
+		"fresh": "jsr:@fresh/core@^2.1.4",
+		"preact": "npm:preact@^10.27.2",
+		"@preact/signals": "npm:@preact/signals@^2.4.0",
+		"@fresh/plugin-vite": "jsr:@fresh/plugin-vite@^1.0.7",
+		"vite": "npm:vite@^7.2.1"
+	},
+	"compilerOptions": {
+		"lib": [
+			"dom",
+			"dom.asynciterable",
+			"dom.iterable",
+			"deno.ns"
+		],
+		"jsx": "precompile",
+		"jsxImportSource": "preact",
+		"jsxPrecompileSkipElements": [
+			"a",
+			"img",
+			"source",
+			"body",
+			"html",
+			"head",
+			"title",
+			"meta",
+			"script",
+			"link",
+			"style",
+			"base",
+			"noscript",
+			"template"
+		],
+		"types": [
+			"vite/client"
+		]
+	}
+}
