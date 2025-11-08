@@ -10,6 +10,7 @@ export interface ProjectCardProps {
 	description: string;
 	languageColor?: string;
 	languageName?: string;
+	license?: string;
 }
 
 export default function ProjectCard({
@@ -19,6 +20,7 @@ export default function ProjectCard({
 	description,
 	languageColor,
 	languageName,
+	license,
 }: ProjectCardProps) {
 	return (
 		<a
@@ -46,6 +48,27 @@ export default function ProjectCard({
 					<path d="M15 4h5v5" />
 				</svg>
 			</span>
+			<div class="license" aria-label="License">
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					width="10"
+					height="10"
+					viewBox="0 0 24 24"
+					fill="none"
+					stroke="currentColor"
+					stroke-width="2"
+					stroke-linecap="round"
+					stroke-linejoin="round"
+				>
+					<title>License</title>
+					<path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z" />
+					<path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z" />
+					<path d="M7 21h10" />
+					<path d="M12 3v18" />
+					<path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2" />
+				</svg>
+				<span>{license || "Unlicensed"}</span>
+			</div>
 
 			<div class="author">
 				<strong>{author}</strong>/{name}

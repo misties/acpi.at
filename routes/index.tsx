@@ -34,9 +34,7 @@ export default function Home() {
 				<p>
 					Feel free to reach out through any of the platforms listed above. For
 					email correspondence, you can reach me at{" "}
-					<Code>
-						base64 -d &lt;&lt;&lt; bXV4QGFjcGkuYXQK
-					</Code>.
+					<Code>base64 -d &lt;&lt;&lt; bXV4QGFjcGkuYXQK</Code>.
 				</p>
 				<p>
 					Psst! When discussing sensitive matters over email or other insecure
@@ -103,11 +101,12 @@ export default function Home() {
 					<li>
 						<ProjectCard
 							author="favewa"
-							name="disinterest"
-							description="pinterest frontend that requires zero client-side js "
-							url="http://github.com/favewa/disinterest"
+							name="cobweb"
+							description="a lightweight, tiny web framework for deno tailored for dynamic no-js applications"
+							url="http://github.com/misties/cobweb"
 							languageColor="#3178c6"
 							languageName="TypeScript"
+							license="BSD-3-Clause"
 						/>
 					</li>
 					<li>
@@ -118,6 +117,18 @@ export default function Home() {
 							url="http://kyu.re/~web"
 							languageColor="#3178c6"
 							languageName="TypeScript"
+							license="AGPL-3.0-or-later"
+						/>
+					</li>
+					<li>
+						<ProjectCard
+							author="w"
+							name="wildcat"
+							description="lightweight, minimal, crossplatform, and straightforward opengl-based rendering and windowing libraries"
+							url="http://kyu.re/~wildcat"
+							languageColor="#555"
+							languageName="C"
+							license="BSD-3-Clause"
 						/>
 					</li>
 				</ul>
@@ -186,25 +197,16 @@ export default function Home() {
 				<div class="buttons">
 					<Meow />
 					<a href="https://worf.win">
-						<img
-							src="https://worf.win/images/worfwin.gif"
-							alt="worf"
-						/>
+						<img src="https://worf.win/images/worfwin.gif" alt="worf" />
 					</a>
 					<a href="https://codeberg.org/paige">
 						<img src="/88x31/paige.gif" alt="paige" />
 					</a>
 					<a href="https://mugman.tech">
-						<img
-							src="https://mugman.tech/88x31/me.gif"
-							alt="mugman"
-						/>
+						<img src="https://mugman.tech/88x31/me.gif" alt="mugman" />
 					</a>
 					<a href="https://f.dog">
-						<img
-							src="https://x86.pet/~strawberry/june_88x31.png"
-							alt="june"
-						/>
+						<img src="https://x86.pet/~strawberry/june_88x31.png" alt="june" />
 					</a>
 					<a
 						rel="noopener"

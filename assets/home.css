@@ -29,6 +29,23 @@
 	border-color: rgba(255, 255, 255, 0.125);
 }
 
+.project-card .license {
+	font-size: var(--font-size-sm);
+	position: absolute;
+	color: var(--theme-foreground-alt);
+	bottom: var(--space-3);
+	right: var(--space-3);
+	opacity: 50%;
+}
+
+.project-card .license svg {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 1ch;
+	width: var(--font-size-sm);
+	height: var(--font-size-sm);
+}
+
 .project-card .external-icon {
 	position: absolute;
 	color: var(--theme-foreground-alt);
@@ -337,34 +354,46 @@ u #friends::before {
 }
 
 @keyframes type-delete-1 {
-	0%, 25%, 100% {
+	0%,
+	25%,
+	100% {
 		width: 0;
 	}
-	8.33%, 16.66% {
+	8.33%,
+	16.66% {
 		width: 6ch;
 	}
 }
 
 @keyframes type-delete-2 {
-	0%, 33.33%, 58.33%, 100% {
+	0%,
+	33.33%,
+	58.33%,
+	100% {
 		width: 0;
 	}
-	41.66%, 50% {
+	41.66%,
+	50% {
 		width: 5ch;
 	}
 }
 
 @keyframes type-delete-3 {
-	0%, 66.66%, 91.66%, 100% {
+	0%,
+	66.66%,
+	91.66%,
+	100% {
 		width: 0;
 	}
-	75%, 83.33% {
+	75%,
+	83.33% {
 		width: 5ch;
 	}
 }
 
 @keyframes caret {
-	0%, 50% {
+	0%,
+	50% {
 		opacity: 1;
 	}
 	100% {
@@ -450,7 +479,8 @@ u #friends::before {
 	object-fit: cover;
 }
 
-.pfps a:hover, .pfps img:hover {
+.pfps a:hover,
+.pfps img:hover {
 	filter: none;
 }
 
