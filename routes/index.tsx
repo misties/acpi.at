@@ -10,6 +10,7 @@ import ProjectCard from "@/components/ProjectCard.tsx";
 import Code from "@/islands/Code.tsx";
 import Meow from "@/islands/Meow.tsx";
 import "@/assets/home.css";
+import Footer from "../components/Footer.tsx";
 
 export default function Home() {
 	return (
@@ -17,17 +18,24 @@ export default function Home() {
 			<Links selected="home" />
 			<Header class="home" />
 			<section id="about">
-				<h2>About</h2>
+				<h2>Summary</h2>
 				<p>
-					Advocate for open access to information and knowledge and aspiring
-					electrical engineer with complementary interests in systems
-					programming and linguistics.
+					I'm an aspiring electrical engineer with a keen interest in open
+					access to information and knowledge. My technical work centers on
+					functional programming, C99, and writing quirky TypeScript code that
+					explores its more obscure corners and unconventional patterns. I'm
+					drawn to atypical low-level technologies and have a particular
+					interest in the x86 and RISC-V ISAs.
 				</p>
 				<p>
-					On the side, I maintain a modest FreeBSD server where I self-host this
-					website and various services. This is nothing particularly impressive,
-					just a growing curiosity about systems administration.
+					When I'm not studying circuits or coding, it's likely that I'm either
+					exploring linguistics or listening to music. My tastes shift
+					constantly with my hyperfocus, ranging from indie, shoegaze, and J-Pop
+					to speedcore and various metal derivatives. I run a FreeBSD server
+					that hosts this site and various services, serving as my hands-on lab
+					for systems administration. <span class="highlight">^-^</span>
 				</p>
+				<a href="/about">→ Extended version</a>
 			</section>
 			<section id="links">
 				<h2>Links</h2>
@@ -107,17 +115,6 @@ export default function Home() {
 							languageColor="#3178c6"
 							languageName="TypeScript"
 							license="BSD-3-Clause"
-						/>
-					</li>
-					<li>
-						<ProjectCard
-							author="w"
-							name="acpi.at"
-							description="personal website"
-							url="http://kyu.re/~web"
-							languageColor="#3178c6"
-							languageName="TypeScript"
-							license="AGPL-3.0-or-later"
 						/>
 					</li>
 					<li>
@@ -243,6 +240,7 @@ export default function Home() {
 					</a>
 				</div>
 			</section>
+			<Footer />
 		</>
 	);
 }

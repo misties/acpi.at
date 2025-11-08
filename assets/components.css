@@ -106,7 +106,7 @@ section::before {
 	}
 }
 
-section.typewriting a::after,
+.typewriting a::after,
 #donation a::after,
 #links a::after {
 	display: inline-block;

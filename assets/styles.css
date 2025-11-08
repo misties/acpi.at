@@ -1,3 +1,5 @@
+@import url(/fonts/iosevka-custom/import.css);
+
 *,
 *::before,
 *::after {
@@ -57,11 +59,16 @@ button,
 	cursor: pointer;
 }
 
-html, body {
+html,
+body {
 	font-size: var(--font-size-base);
 }
 
-html, body, pre, code, button {
+html,
+body,
+pre,
+code,
+button {
 	font-family:
 		"Iosevka Custom Web", "Iosevka Custom", "Iosevka", monospace, sans-serif;
 	line-height: 1.7;
