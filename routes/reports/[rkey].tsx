@@ -6,6 +6,7 @@
 import { PageProps } from "fresh";
 import { getCachedReports } from "@/utils/atproto.ts";
 import Empty from "@/components/Empty.tsx";
+import "@/assets/report.css";
 
 export default function PostPage(props: PageProps) {
 	const { rkey } = props.params;

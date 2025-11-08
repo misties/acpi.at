@@ -3,12 +3,13 @@
  * SPDX-License-Identifier: AGPL-3.0-or-later
  */
 
-import { Fm } from "../components/Fm.tsx";
-import { Header } from "../components/Header.tsx";
-import Links from "../components/Links.tsx";
-import ProjectCard from "../components/ProjectCard.tsx";
-import Code from "../islands/Code.tsx";
-import Meow from "../islands/Meow.tsx";
+import { Fm } from "@/components/Fm.tsx";
+import { Header } from "@/components/Header.tsx";
+import Links from "@/components/Links.tsx";
+import ProjectCard from "@/components/ProjectCard.tsx";
+import Code from "@/islands/Code.tsx";
+import Meow from "@/islands/Meow.tsx";
+import "@/assets/home.css";
 
 export default function Home() {
 	return (
