@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2025 favewa
+ * Copyright (c) 2025 miwa
  * SPDX-License-Identifier: AGPL-3.0-or-later
  */
 
@@ -34,11 +34,13 @@ export function Fm() {
 												▷
 											</span>
 										)
-										: (track.loved && (
-											<span class="loved" title="Loved">
-												❤
-											</span>
-										))}
+										: (
+											track.loved && (
+												<span class="loved" title="Loved">
+													❤
+												</span>
+											)
+										)}
 								</div>
 							</a>
 						</li>

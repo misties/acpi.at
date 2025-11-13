@@ -42,9 +42,9 @@ nav li a {
 }
 
 nav li.selected a {
-	background-color: var(--theme-foreground);
+	background-color: var(--theme-primary);
 	color: var(--theme-background);
-	border-radius: var(--radius-sm);
+	border-radius: var(--radius-lg);
 }
 
 nav a {
@@ -108,19 +108,31 @@ section::before {
 
 .typewriting a::after,
 #donation a::after,
-#links a::after {
+#links a::after,
+#about a::after,
+article a::after {
 	display: inline-block;
 	width: 0.9em;
 	height: 0.9em;
 	margin-left: var(--space-1);
 	vertical-align: -0.1em;
-	content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23cac7ee' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath stroke='none' d='M0 0h24v24H0z' fill='none'/%3E%3Cpath d='M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6' /%3E%3Cpath d='M11 13l9 -9' /%3E%3Cpath d='M15 4h5v5' /%3E%3C/svg%3E");
+	content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23a7a0ff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath stroke='none' d='M0 0h24v24H0z' fill='none'/%3E%3Cpath d='M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6' /%3E%3Cpath d='M11 13l9 -9' /%3E%3Cpath d='M15 4h5v5' /%3E%3C/svg%3E");
+}
+
+@media (prefers-color-scheme: light) {
+	.typewriting a::after,
+	#donation a::after,
+	#links a::after,
+	#about a::after,
+	article a::after {
+		content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%236f65f2' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath stroke='none' d='M0 0h24v24H0z' fill='none'/%3E%3Cpath d='M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6' /%3E%3Cpath d='M11 13l9 -9' /%3E%3Cpath d='M15 4h5v5' /%3E%3C/svg%3E");
+	}
 }
 
 section.typewriting a,
 #donation a,
 #links a {
-	color: var(--theme-foreground);
+	color: var(--theme-primary);
 }
 
 header {

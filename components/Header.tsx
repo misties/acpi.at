@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2025 favewa
+ * Copyright (c) 2025 miwa
  * SPDX-License-Identifier: AGPL-3.0-or-later
  */
 
@@ -7,10 +7,9 @@ export function Header(props: any) {
 	return (
 		<header {...props}>
 			<h1 class="typecycle">
-				~
-				<span>favewa</span>
+				~<span>miwa</span>
 				<span>lívia</span>
-				<span>laura</span>
+				<span>clara</span>
 			</h1>
 			<h2>
 				she/her ∘ free software advocate ∘ linguistics enthusiast ૮ ˶ᵔ ᵕ ᵔ˶ sა

@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2025 misties
+ * Copyright (c) 2025 miwa
  * SPDX-License-Identifier: AGPL-3.0-or-later
  */
 
@@ -21,7 +21,7 @@ export default function Footer() {
 			</p>
 			<br />
 			<p class="alt alt-font">
-				© 2025 <span class="highlight">favewa</span>{" "}
+				© 2025 <span class="highlight">miwa</span>{" "}
 				• Powered by FreeBSD and autism
 			</p>
 		</footer>

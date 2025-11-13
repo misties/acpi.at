@@ -1,13 +1,13 @@
 #!/usr/bin/env -S deno run --allow-read --allow-write
 /**
- * Copyright (c) 2025 favewa
+ * Copyright (c) 2025 miwa
  * SPDX-License-Identifier: AGPL-3.0-or-later
  */
 
 import { walk } from "https://deno.land/std/fs/walk.ts";
 
 const copyrightHeader = `/**
- * Copyright (c) 2025 favewa
+ * Copyright (c) 2025 miwa
  * SPDX-License-Identifier: AGPL-3.0-or-later
  */
 `;

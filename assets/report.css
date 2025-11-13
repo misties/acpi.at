@@ -11,7 +11,7 @@
 	border: 1px solid var(--theme-separator);
 	padding: var(--space-4) var(--space-5);
 	margin-bottom: var(--space-3);
-	border-radius: var(--radius-md);
+	border-radius: var(--radius-lg);
 	transition: all var(--transition-fast);
 	opacity: 75%;
 	position: relative;
@@ -31,10 +31,11 @@
 	line-height: 1;
 	text-align: center;
 	-webkit-text-stroke: 2px var(--theme-separator);
-	opacity: 0.5;
+	opacity: 0.16;
 }
 
-.reports li, .report:hover {
+.reports li,
+.report:hover {
 	opacity: 1;
 	filter: none;
 }
@@ -43,6 +44,11 @@
 	font-size: var(--font-size-sm);
 	color: var(--theme-foreground-bruh);
 	margin-bottom: var(--space-2);
+}
+
+.report .readingTime {
+	font-size: var(--font-size-sm);
+	color: var(--theme-foreground-bruh);
 }
 
 .report h3 {
@@ -59,7 +65,8 @@
 	margin-bottom: var(--space-2);
 }
 
-.report .excerpt, .report .title {
+.report .excerpt,
+.report .title {
 	display: -webkit-box;
 	-webkit-box-orient: vertical;
 	-webkit-line-clamp: 2;
@@ -71,6 +78,7 @@
 .report .tags {
 	display: flex;
 	flex-wrap: wrap;
+	align-items: center;
 	gap: var(--space-2);
 	margin-top: var(--space-3);
 }
@@ -80,7 +88,7 @@
 	padding: var(--space-0) var(--space-2);
 	background-color: var(--theme-background);
 	border: 1px solid var(--theme-separator);
-	border-radius: var(--radius-sm);
+	border-radius: var(--radius-lg);
 	color: var(--theme-foreground-alt);
 }
 
@@ -111,13 +119,20 @@ article header .meta {
 	align-items: center;
 	font-size: var(--font-size-md);
 	color: var(--theme-foreground-bruh);
-	margin-bottom: var(--space-4);
+	margin-bottom: var(--space-2);
 	gap: var(--space-4);
+}
+
+body > a[href="/reports"] {
+	color: var(--theme-foreground-alt);
+	font-size: 0.75em;
+	font-style: italic;
 }
 
 article header h1 {
 	font-size: var(--font-size-xl);
-	margin: var(--space-3) 0;
+	margin-top: var(--space-5);
+	margin-bottom: var(--space-3);
 	color: var(--theme-foreground);
 }
 
@@ -132,7 +147,7 @@ article header .tag {
 	padding: var(--space-1) var(--space-3);
 	background-color: var(--theme-background-alt);
 	border: 1px solid var(--theme-separator);
-	border-radius: 2px;
+	border-radius: var(--radius-lg);
 	color: var(--theme-foreground-alt);
 }
 
@@ -178,4 +193,20 @@ article footer {
 	text-align: center;
 	color: var(--theme-foreground-alt);
 	font-size: var(--font-size-md);
+}
+
+#reports-header {
+	display: flex;
+	align-items: center;
+	gap: var(--space-3);
+}
+
+#reports-header > a {
+	font-size: 1rem;
+	display: flex;
+	align-items: center;
+}
+
+#reports-header > a > svg {
+	margin-left: var(--space-1);
 }

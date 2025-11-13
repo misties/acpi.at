@@ -1,8 +1,9 @@
 /**
- * Copyright (c) 2025 favewa
+ * Copyright (c) 2025 miwa
  * SPDX-License-Identifier: AGPL-3.0-or-later
  */
 
+import { calculateReadingTime, ReadingTimeResult } from "./blog.ts";
 import { withInterval } from "./temp.ts";
 
 export interface Report {
@@ -14,6 +15,7 @@ export interface Report {
 	createdAt: string;
 	tags?: string[];
 	visibility: string;
+	readingTime: ReadingTimeResult;
 	date: Date;
 }
 
@@ -59,6 +61,7 @@ export async function getPosts(cursor?: string): Promise<Report[]> {
 		...value,
 		rkey: rkey(uri),
 		date: new Date(value.createdAt),
+		readingTime: value.content ? calculateReadingTime(value.content) : 1,
 		createdAt: new Date(value.createdAt).toISOString().slice(0, 10).replace(
 			/-/g,
 			".",
@@ -82,6 +85,9 @@ export async function retrieveReport(rkey: string): Promise<Report | null> {
 
 	return {
 		...response.value,
+		readingTime: response.value.content
+			? calculateReadingTime(response.value.content)
+			: 1,
 		cid: response.cid,
 		rkey,
 	} as Report;

@@ -12,3 +12,4 @@ node_modules/
 vendor/
 
 sync.sh
+static/extra

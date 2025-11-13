@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2025 favewa
+ * Copyright (c) 2025 miwa
  * SPDX-License-Identifier: AGPL-3.0-or-later
  */
 
@@ -25,17 +25,8 @@ export default function Home() {
 					functional programming, C99, and writing quirky TypeScript code that
 					explores its more obscure corners and unconventional patterns. I'm
 					drawn to atypical low-level technologies and have a particular
-					interest in the x86 and RISC-V ISAs.
+					interest in the x86 and RISC-V ISAs. <a href="/about">Read more</a>
 				</p>
-				<p>
-					When I'm not studying circuits or coding, it's likely that I'm either
-					exploring linguistics or listening to music. My tastes shift
-					constantly with my hyperfocus, ranging from indie, shoegaze, and J-Pop
-					to speedcore and various metal derivatives. I run a FreeBSD server
-					that hosts this site and various services, serving as my hands-on lab
-					for systems administration. <span class="highlight">^-^</span>
-				</p>
-				<a href="/about">→ Extended version</a>
 			</section>
 			<section id="links">
 				<h2>Links</h2>
@@ -65,12 +56,12 @@ export default function Home() {
 									title="Discord"
 									href="https://discord.com/users/797566974024351745"
 								>
-									@favewa on Discord
+									@rumiwa on Discord
 								</a>
 							</li>
 							<li>
-								<a title="Telegram" href="https://t.me/favewa">
-									@favewa on Telegram
+								<a title="Telegram" href="https://t.me/lauwawa">
+									@lauwawa on Telegram
 								</a>
 							</li>
 						</ul>
@@ -79,8 +70,8 @@ export default function Home() {
 						<h3>Code</h3>
 						<ul>
 							<li>
-								<a title="GitHub" href="https://github.com/misties">
-									misties on GitHub
+								<a title="GitHub" href="https://github.com/fukkai">
+									fukkai on GitHub
 								</a>
 							</li>
 							<li>
@@ -108,12 +99,23 @@ export default function Home() {
 				<ul>
 					<li>
 						<ProjectCard
-							author="favewa"
+							author="fukkai"
 							name="cobweb"
 							description="a lightweight, tiny web framework for deno tailored for dynamic no-js applications"
-							url="http://github.com/misties/cobweb"
+							url="http://github.com/fukkai/cobweb"
 							languageColor="#3178c6"
 							languageName="TypeScript"
+							license="BSD-3-Clause"
+						/>
+					</li>
+					<li>
+						<ProjectCard
+							author="fukkai"
+							name="ratazana"
+							description="minimal implementation of logitech and razer mouse firmware, repurposing their onboard memory as a covert channel for arbitrary data"
+							url="http://github.com/fukkai/ratazana"
+							languageColor="#555"
+							languageName="C"
 							license="BSD-3-Clause"
 						/>
 					</li>
@@ -144,7 +146,7 @@ export default function Home() {
 						<span class="key">WEB</span>
 						<code class="value">
 							<a href="https://ko-fi.com/west">west@ko-fi</a>
-							<a href="https://github.com/sponsors/misties">misties@github</a>
+							<a href="https://github.com/sponsors/fukkai">fukkai@github</a>
 						</code>
 					</div>
 					<div class="row">
